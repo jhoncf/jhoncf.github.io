@@ -139,7 +139,7 @@ params:
     title: "Sobre Mim"
     image: "/images/me.png"
     content: |-
-      Na minha trajetória, tenho liderado equipes de DevOps, Segurança e Compliance, com foco em arquitetura AWS. Sou encarregado de implementar e aprimorar normas de PCI, Segurança da Informação, LGPD e Compliance, integrando esses aspectos com os princípios DevOps e soluções de cloud. Meu papel central é assegurar a excelência, eficiência, segurança e conformidade dos serviços e produtos, visando sempre a satisfação dos clientes e parceiros. Apaixonado por Linux e tecnologias de cloud, estou sempre em busca de novidades e tendências do mercado para manter a inovação constante.
+      Em minha trajetória, tenho liderado equipes de DevOps, Segurança e Compliance, com foco em arquitetura AWS. Sou encarregado de implementar e aprimorar normas de PCI, Segurança da Informação, LGPD e Compliance, integrando esses aspectos com os princípios DevOps e soluções de cloud. Meu papel central é assegurar a excelência, eficiência, segurança e conformidade dos serviços e produtos, visando sempre a satisfação dos clientes e parceiros. Apaixonado por Linux e tecnologias de cloud, estou sempre em busca de novidades e tendências do mercado para manter a inovação constante.
       <br>      <br>
 
     skills:
@@ -238,7 +238,7 @@ params:
           name: "Fundação Getúlio Vargas"
           url: "https://fgv.br"
         date: "2023 - 2024"
-      - title: "Bacharelado em Analise de Sistemas e Tecnologia da Informação"
+      - title: "Bacharelado em Análise de Sistemas e Tecnologia da Informação"
         school:
           name: "FATEC"
           url: "https://www.fatecourinhos.edu.br/"
