@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teste Web Push - LigueLead</title>
+</head>
+<body style="font-family: sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px;">
+  <h1>Teste Web Push</h1>
+  <p>Esta pagina registra o service worker e pede permissao de notificacao.
+     Abra o console (F12) para ver os logs <code>[ll-webpush]</code>.</p>
+  <p id="status">Carregando o embed...</p>
+  <button id="ask" style="padding:10px 16px;font-size:16px;cursor:pointer;">
+    Ativar notificacoes
+  </button>
+  <script>
+    // Mostra o estado da permissao na tela.
+    function render() {
+      var s = document.getElementById('status');
+      if (!('Notification' in window)) { s.textContent = 'Navegador sem suporte a Notification.'; return; }
+      s.textContent = 'Permissao atual: ' + Notification.permission +
+        ' | secure: ' + window.isSecureContext +
+        ' | SW: ' + ('serviceWorker' in navigator);
+    }
+    render();
+    // Botao para forcar o prompt (alguns browsers exigem gesto do usuario).
+    document.getElementById('ask').addEventListener('click', function () {
+      Notification.requestPermission().then(function (p) {
+        console.log('[teste] permission =>', p);
+        render();
+      });
+    });
+  </script>
+  <script src="https://dhzw3sh9upmwj.cloudfront.net/embed.js" data-site-id="bcc2ae48-5c70-47da-aa62-ae160511fe55"></script>
+</body>
+</html>
