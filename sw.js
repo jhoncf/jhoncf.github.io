@@ -9,7 +9,7 @@
  */
 "use strict";
 
-var CLICK_ENDPOINT = "https://platform-api.production.liguelead.app.br/push/campaigns/click"; // e.g. https://api-push.liguelead.com.br/push/campaigns/click
+var CLICK_ENDPOINT = "https://musm85ofkh.execute-api.us-east-1.amazonaws.com/click"; // e.g. https://api-push.liguelead.com.br/push/campaigns/click
 var SW_VERSION = "1";
 
 self.addEventListener("install", function () {
